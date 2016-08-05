@@ -1,0 +1,41 @@
+.ourServices {
+  background-color: blue;
+  height: 540px;
+}
+
+.ourServicesTitle {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 240%;
+  color: white;
+}
+
+.ourServicesDescribtion {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 108%;
+  color: white;
+  margin-bottom: 100px;
+}
+
+
+
+.ourServicesMenuList li {
+  float: left;
+  width: 18%;
+  list-style: none;
+  height: 250px;
+  margin-left: 5.2%;
+}
+
+.ourServicesMenuListTitle {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+
+.ourServicesMenuListImage {
+  display: block;
+  height: 200px;
+  background-color: gray;
+}

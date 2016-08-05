@@ -1,0 +1,70 @@
+.contuctUsContentTitle {
+  text-align: center;
+  font-size: 290%;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.contuctUs {
+  padding: 80px 60px;
+  margin-top: 100px;
+  background-color: gray;
+}
+
+.contuctUsContent {
+  background-color: blue;
+}
+
+.contuctUsContentColumnsFirstTitle {
+  font-size: 140%;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  color: white;
+}
+
+.contuctUsContentColumnsFirstMenu {
+  list-style: none;
+}
+
+.contuctUsContentColumnsFirstMenu li {
+  margin-top: 20px;
+  color: white;
+  margin-left: 80px;
+}
+
+.contuctUsContentColumnsFirst, .contuctUsContentColumnsSecond {
+  display: inline-block;
+  vertical-align: top;
+}
+.contuctUsContentColumnsSecond {
+  margin-left: 380px;
+}
+
+.contuctUsContentColumnsSecondTitle {
+  font-size: 140%;
+  color: white;
+}
+
+input[type="text"] {
+  width: 500px;
+  margin-top: 20px;
+  height: 30px;
+}
+
+#textareaMessage {
+  width: 502px;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  margin-left: 305px;
+  height: 45px;
+  width: 200px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 130%;
+  margin-bottom: 20px;
+}

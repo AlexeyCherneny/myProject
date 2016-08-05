@@ -1,0 +1,48 @@
+.aboutUsTitle {
+  font-size: 340%;
+  text-align: center;
+  padding-top: 25px;
+  color: blue;
+}
+
+.aboutUsDescription {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutUsStore {
+  margin-bottom: 60px;
+}
+
+.aboutUsStoreFirst, .aboutUsStoreSecond, .aboutUsStoreThird {
+  float: left;
+  vertical-align: top;
+  height: 520px;
+  width: 25.5%;
+  background-color: black;
+  margin-left: 5.5%;
+}
+
+.aboutUsStoreFirstPlaseForImage, .aboutUsStoreSecondtPlaseForImage, .aboutUsStoreThirdPlaseForImage {
+  height:65%;
+  background-color: gray;
+}
+
+.aboutUsStoreFirstPlaseForDescriptionTitle, .aboutUsStoreSecondPlaseForDescriptionTitle, .aboutUsStoreThirdPlaseForDescriptionTitle {
+  text-align: center;
+  font-size: 140%;
+  margin-top: 45px;
+  color: white;
+}
+
+.aboutUsStoreFirstPlaseForDescriptionDescription, .aboutUsStoreSecondPlaseForDescriptionDescription, .aboutUsStoreThirdPlaseForDescriptionDescription {
+  padding: 12px;
+  text-align: center;
+  font-size: 80%;
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+}

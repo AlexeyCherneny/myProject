@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "description": "my first project",
+  "main": "index.js",
+  "authors": [
+    "chirforever"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

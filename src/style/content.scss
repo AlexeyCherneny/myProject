@@ -1,0 +1,22 @@
+.content {
+  background-color: gray;
+  height: 584px;
+}
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.arrowLeft {
+  top: 340px;
+  left: 30px;
+}
+
+.arrowRight {
+  top: 340px;
+  right: 30px;
+}

@@ -1,0 +1,46 @@
+.header {
+
+  height: 70px;
+}
+
+.mainMenu {
+    float:right;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.mainMenu ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.mainMenu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainMenu ul li.selected a {
+  color: blue;
+}
+
+.mainMenu ul li a:hover {
+  color: green;
+}
+
+.busina {
+    display: inline-block;
+    font-size: 135%;
+    margin-left: 100px;
+    margin-top: 18px;
+}
+
+.imageU {
+    display: inline-block;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 55px;
+}
+
+.imgU {
+  width: 45px;
+}

@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  height: 70px; }
+
+.mainMenu {
+  float: right;
+  margin-right: 80px;
+  margin-top: 30px; }
+
+.mainMenu ul li {
+  display: inline-block;
+  padding-right: 10px; }
+
+.mainMenu ul li a {
+  text-decoration: none;
+  color: black; }
+
+.mainMenu ul li.selected a {
+  color: blue; }
+
+.mainMenu ul li a:hover {
+  color: green; }
+
+.busina {
+  display: inline-block;
+  font-size: 135%;
+  margin-left: 100px;
+  margin-top: 18px; }
+
+.imageU {
+  display: inline-block;
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 55px; }
+
+.imgU {
+  width: 45px; }
+
+.content {
+  background-color: gray;
+  height: 584px; }
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
+  border-radius: 20px;
+  position: absolute; }
+
+.arrowLeft {
+  top: 340px;
+  left: 30px; }
+
+.arrowRight {
+  top: 340px;
+  right: 30px; }
+
+.aboutUsTitle {
+  font-size: 340%;
+  text-align: center;
+  padding-top: 25px;
+  color: blue; }
+
+.aboutUsDescription {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.aboutUsStore {
+  margin-bottom: 60px; }
+
+.aboutUsStoreFirst, .aboutUsStoreSecond, .aboutUsStoreThird {
+  float: left;
+  vertical-align: top;
+  height: 520px;
+  width: 25.5%;
+  background-color: black;
+  margin-left: 5.5%; }
+
+.aboutUsStoreFirstPlaseForImage, .aboutUsStoreSecondtPlaseForImage, .aboutUsStoreThirdPlaseForImage {
+  height: 65%;
+  background-color: gray; }
+
+.aboutUsStoreFirstPlaseForDescriptionTitle, .aboutUsStoreSecondPlaseForDescriptionTitle, .aboutUsStoreThirdPlaseForDescriptionTitle {
+  text-align: center;
+  font-size: 140%;
+  margin-top: 45px;
+  color: white; }
+
+.aboutUsStoreFirstPlaseForDescriptionDescription, .aboutUsStoreSecondPlaseForDescriptionDescription, .aboutUsStoreThirdPlaseForDescriptionDescription {
+  padding: 12px;
+  text-align: center;
+  font-size: 80%;
+  color: white; }
+
+.clearfix {
+  clear: both; }
+
+.ourServices {
+  background-color: blue;
+  height: 540px; }
+
+.ourServicesTitle {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 240%;
+  color: white; }
+
+.ourServicesDescribtion {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 108%;
+  color: white;
+  margin-bottom: 100px; }
+
+.ourServicesMenuList li {
+  float: left;
+  width: 18%;
+  list-style: none;
+  height: 250px;
+  margin-left: 5.2%; }
+
+.ourServicesMenuListTitle {
+  text-align: center;
+  padding-top: 15px;
+  color: white; }
+
+.ourServicesMenuListImage {
+  display: block;
+  height: 200px;
+  background-color: gray; }
+
+.ourTeamTitle {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 300%;
+  text-align: center; }
+
+.ourTeamDescription {
+  text-align: center; }
+
+.ourTeamContent {
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 125px; }
+
+.ourTeamContent li {
+  background-color: blue;
+  list-style: none;
+  width: 180px;
+  float: left;
+  height: 180px; }
+
+.ourTeamContentListMembersDescriptionTitle {
+  padding-top: 25px;
+  color: white; }
+
+.ourTeamContentListMembersDescriptionDescription {
+  padding-top: 15px;
+  color: white;
+  font-size: 80%; }
+
+.ourTeamContetntListImage {
+  background-color: gray !important; }
+
+.contuctUsContentTitle {
+  text-align: center;
+  font-size: 290%;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 60px; }
+
+.contuctUs {
+  padding: 80px 60px;
+  margin-top: 100px;
+  background-color: gray; }
+
+.contuctUsContent {
+  background-color: blue; }
+
+.contuctUsContentColumnsFirstTitle {
+  font-size: 140%;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  color: white; }
+
+.contuctUsContentColumnsFirstMenu {
+  list-style: none; }
+
+.contuctUsContentColumnsFirstMenu li {
+  margin-top: 20px;
+  color: white;
+  margin-left: 80px; }
+
+.contuctUsContentColumnsFirst, .contuctUsContentColumnsSecond {
+  display: inline-block;
+  vertical-align: top; }
+
+.contuctUsContentColumnsSecond {
+  margin-left: 380px; }
+
+.contuctUsContentColumnsSecondTitle {
+  font-size: 140%;
+  color: white; }
+
+input[type="text"] {
+  width: 500px;
+  margin-top: 20px;
+  height: 30px; }
+
+#textareaMessage {
+  width: 502px;
+  margin-top: 20px; }
+
+input[type="submit"] {
+  margin-top: 20px;
+  margin-left: 305px;
+  height: 45px;
+  width: 200px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 130%;
+  margin-bottom: 20px; }

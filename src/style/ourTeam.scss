@@ -1,0 +1,40 @@
+.ourTeamTitle {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 300%;
+  text-align: center;
+}
+
+.ourTeamDescription {
+  text-align: center;
+}
+
+.ourTeamContent {
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 125px;
+
+}
+
+.ourTeamContent li {
+  background-color: blue;
+  list-style: none;
+  width: 180px;
+  float: left;
+  height: 180px;
+}
+
+.ourTeamContentListMembersDescriptionTitle {
+  padding-top: 25px;
+  color: white;
+}
+
+.ourTeamContentListMembersDescriptionDescription {
+  padding-top: 15px;
+  color: white;
+  font-size: 80%;
+}
+
+.ourTeamContetntListImage {
+  background-color: gray !important;
+}
