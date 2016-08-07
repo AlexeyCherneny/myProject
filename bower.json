@@ -1,17 +1,19 @@
 {
-  "name": "project",
-  "description": "my first project",
-  "main": "index.js",
+  "name": "habr",
+  "version": "0.0.0",
   "authors": [
-    "chirforever"
+    "Insayt <insait.rostov@ya.ru>"
   ],
-  "license": "ISC",
-  "homepage": "",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
 }

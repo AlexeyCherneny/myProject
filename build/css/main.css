@@ -58,6 +58,12 @@
   top: 340px;
   right: 30px; }
 
+.contentMenu li {
+  display: inline-block; }
+
+.hidden {
+  visibility: hidden; }
+
 .aboutUsTitle {
   font-size: 340%;
   text-align: center;
