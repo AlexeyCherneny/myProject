@@ -58,11 +58,12 @@
   top: 340px;
   right: 30px; }
 
-.contentMenu li {
+.contentMenu {
   display: inline-block; }
 
 .hidden {
-  visibility: hidden; }
+  visibility: hidden;
+  position: absolute; }
 
 .aboutUsTitle {
   font-size: 340%;

@@ -21,11 +21,13 @@
   right: 30px;
 }
 
-.contentMenu li {
+.contentMenu {
   display: inline-block;
 
 }
 
 .hidden {
   visibility: hidden;
+  position:absolute;
+
 }
