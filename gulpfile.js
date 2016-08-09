@@ -32,7 +32,7 @@ gulp.task("js:build", function(){
 });
 
 gulp.task("image:build", function(){
-    return gulp.src("src/img/*.+(jpg|jpeg)")
+    return gulp.src("src/img/*.+(jpg|jpeg|png)")
     .pipe(gulp.dest("build/img"))
     .pipe(browserSync.reload({
       stream: true
