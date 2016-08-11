@@ -1,42 +1,18 @@
 
-var galleryCliker = 0;
+var width = 1351;
 
+var carousel = document.getElementById("carousel");
+var list = carousel.querySelector('ul');
+var listElems = carousel.querySelectorAll('li');
 
-$(".arrowLeft").on("click", function(){
-  if (galleryCliker <= 0) {
-    console.log("Number too small");
-    return;
-   } else {
-    galleryCliker--;
-    changeGallery(galleryCliker);
-      }
-})
+var position = 0;
 
-$(".arrowRight").on("click", function(){
-  if (galleryCliker >= 1) {
-    console.log("Number too big");
-    return;
-   } else {
-    galleryCliker++;
-    changeGallery(galleryCliker);
-      }
-})
+$(".prev").on("click", function() {
+  position = Math.min(position + width, 0)
+  list.style.marginLeft = position + 'px';
+});
 
-var changeGallery = function(galleryCliker) {
-  switch(galleryCliker) {
-    case 0:
-      var list = $("#gallery > li");
-        for (var i = 0; i < list.length; i++) {
-          list[i].classList.add("hidden");
-        }
-      list[0].classList.remove("hidden");
-    break;
-    case 1:
-    var list = $("#gallery > li");
-    for (var i = 0; i < list.length; i++) {
-      list[i].classList.add("hidden");
-    }
-    list[1].classList.remove("hidden");
-    break;
-  }
-}
+$(".next").on("click", function() {
+  position = Math.max(position - width, -width * (listElems.length - 1));
+  list.style.marginLeft = position + 'px';
+});

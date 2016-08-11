@@ -44,37 +44,55 @@
   left: 1250px;
   position: fixed;
   width: 50px;
-  height: 50px;
-  background-color: red; }
+  height: 50px; }
 
 .upImage {
   width: 100%; }
 
-.content {
-  background-color: gray;
-  height: 584px; }
+.images > li {
+  height: 584px;
+  width: 1351px;
+  display: inline-block;
+  list-style: none;
+  background-color: red; }
+
+.images > li:nth-child(1) {
+  background-image: url(../img/Bez_imeni-1.jpg); }
+
+.images > li:nth-child(2) {
+  background-image: url(../img/mainImage2.jpeg); }
+
+.carousel {
+  width: 1351px;
+  background: #eee; }
 
 .arrow {
-  height: 40px;
-  width: 40px;
-  background-color: yellow;
-  border-radius: 20px;
-  position: absolute; }
+  position: absolute;
+  top: 260px;
+  background: #ddd;
+  border-radius: 15px;
+  display: block;
+  height: 30px;
+  width: 30px; }
 
-.arrowLeft {
-  top: 340px;
-  left: 30px; }
+.prev {
+  left: 7px; }
 
-.arrowRight {
-  top: 340px;
-  right: 30px; }
+.next {
+  right: 7px; }
 
-.contentMenu {
-  display: inline-block; }
+.gallery {
+  width: 1351px;
+  overflow: hidden; }
 
-.hidden {
-  visibility: hidden;
-  position: absolute; }
+.gallery ul {
+  height: 584px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0; }
 
 .aboutUsTitle {
   font-size: 340%;

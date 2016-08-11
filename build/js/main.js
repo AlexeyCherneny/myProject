@@ -9823,10 +9823,15 @@ function getCoords(elem) {
     top: box.top + pageYOffset,
     left: box.left + pageXOffset
   };
-
 }
 
 var upImageClick = document.getElementById('Up');
+var currentLeft;
+var currentTop;
+
+upImageClick.ondragstart = function() {
+  return false;
+};
 
 upImageClick.onmousedown = function(e) {
   var coords = getCoords(upImageClick);
@@ -9840,9 +9845,12 @@ upImageClick.onmousedown = function(e) {
   document.body.appendChild(upImageClick);
 
   upImageClick.style.zIndex = 1000;
+
   function moveAt(e) {
     upImageClick.style.left = e.pageX - shiftX + 'px';
     upImageClick.style.top = e.pageY - shiftY + 'px';
+    currentLeft = upImageClick.style.left;
+    currentTop = upImageClick.style.top;
   };
 
 
@@ -9856,46 +9864,30 @@ upImageClick.onmousedown = function(e) {
     upImageClick.onmouseup = null;
   };
 }
-
-
-var galleryCliker = 0;
-
-
-$(".arrowLeft").on("click", function(){
-  if (galleryCliker <= 0) {
-    console.log("Number too small");
-    return;
-   } else {
-    galleryCliker--;
-    changeGallery(galleryCliker);
-      }
-})
-
-$(".arrowRight").on("click", function(){
-  if (galleryCliker >= 1) {
-    console.log("Number too big");
-    return;
-   } else {
-    galleryCliker++;
-    changeGallery(galleryCliker);
-      }
-})
-
-var changeGallery = function(galleryCliker) {
-  switch(galleryCliker) {
-    case 0:
-      var list = $("#gallery > li");
-        for (var i = 0; i < list.length; i++) {
-          list[i].classList.add("hidden");
-        }
-      list[0].classList.remove("hidden");
-    break;
-    case 1:
-    var list = $("#gallery > li");
-    for (var i = 0; i < list.length; i++) {
-      list[i].classList.add("hidden");
-    }
-    list[1].classList.remove("hidden");
-    break;
-  }
+/*
+upImageClick.onclick = function() {
+  setTimeout(function() {
+    upImageClick.style.left = currentLeft;
+    upImageClick.style.top = currentTop;
+  }, 0)
 }
+*/
+
+
+var width = 1351;
+
+var carousel = document.getElementById("carousel");
+var list = carousel.querySelector('ul');
+var listElems = carousel.querySelectorAll('li');
+
+var position = 0;
+
+$(".prev").on("click", function() {
+  position = Math.min(position + width, 0)
+  list.style.marginLeft = position + 'px';
+});
+
+$(".next").on("click", function() {
+  position = Math.max(position - width, -width * (listElems.length - 1));
+  list.style.marginLeft = position + 'px';
+});
