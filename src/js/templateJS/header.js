@@ -1,4 +1,4 @@
-
+/*
 function getCoords(elem) {
   var box = elem.getBoundingClientRect();
 
@@ -42,4 +42,50 @@ upImageClick.onmousedown = function(e) {
     document.onmousemove = null;
     upImageClick.onmouseup = null;
   };
+}
+*/
+
+var arrow = document.getElementById("arrow");
+var pageYLabel = 0;
+
+arrow.onclick = function() {
+  var pageY = window.pageYOffset || document.documentElement.scrollTop;
+
+  switch (this.className) {
+
+    case "up":
+        pageYLabel = pageY;
+        window.scrollTo(0,0);
+        this.className = "down";
+      break;
+
+    case "down":
+      window.scrollTo(0,pageYLabel);
+      this.className = "up";
+    break;
+  }
+}
+
+window.onscroll = function() {
+  var pageY = window.pageYOffset || document.documentElement.scrollTop;
+  var innerHeight = document.documentElement.clientHeight;
+
+  switch (arrow.className) {
+
+    case "": if (pageY > innerHeight) {
+      arrow.className = "up";
+    }
+    break;
+
+    case "up": if (pageY < innerHeight) {
+      arrow.className = "";
+    }
+    break;
+
+    case 'down':
+          if (pageY > innerHeight) {
+            arrow.className = 'up';
+          }
+          break;
+  }
 }
