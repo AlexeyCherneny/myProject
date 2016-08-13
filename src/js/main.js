@@ -5,3 +5,5 @@
 //= templateJS/header.js
 
 //= templateJS/content.js
+
+//= templateJS/contactUs.js
